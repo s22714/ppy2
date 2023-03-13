@@ -1,16 +1,28 @@
-# This is a sample Python script.
+a = 4000
+b = 4000
+print(id(a))
+print(id(b))
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+a = b = 4000
+print(id(a))
+print(id(b))
 
+b = 3000
+print(id(a))
+print(id(b))
+print(a)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+a = 30.6
+b = "Tekst"
+c = True
+print(type(a))
+print(type(b))
+print(type(c))
 
+print(bool(1))
+print(bool(0))
+print(bool(-1))
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+print(bool("Text"))
+print(bool(""))
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

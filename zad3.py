@@ -1,76 +1,126 @@
 imie_Nazwisko = input("pytanie 1: Jak masz na imie i nazwisko: ")
 print(f"odpowiedz: {imie_Nazwisko}")
 print("\nWpisz numer odpowiedzi\n")
+
+odpowiedzi = ["oglądanie telewizji/filmów/seriali",
+              "czytanie książek/czasopism",
+              "słuchanie muzyki",
+              "spotkania z rodziną/przyjaciółmi",
+              "podróżowanie",
+              "uprawianie sportu",
+              "inne, jakie: "]
 odp1 = input("pytanie 2: Najczęstszym sposobem spędzania wolnego czasu jest dla Ciebie: \n"
-            "\r\r 1. oglądanie telewizji/filmów/seriali \n"
-            "\r\r 2. czytanie książek/czasopism \n"
-            "\r\r 3. czytanie książek/czasopism \n"
-            "\r\r 4. spotkania z rodziną/przyjaciółmi \n"
-            "\r\r 5. podróżowanie \n"
-            "\r\r 6. uprawianie sportu \n"
-            "\r\r 7. inne, jakie:  \n")
-print(f"odpowiedz: {odp1}")
+            f"\r\r 1. {odpowiedzi[0]} \n"
+            f"\r\r 2. {odpowiedzi[1]} \n"
+            f"\r\r 3. {odpowiedzi[2]} \n"
+            f"\r\r 4. {odpowiedzi[3]} \n"
+            f"\r\r 5. {odpowiedzi[4]} \n"
+            f"\r\r 6. {odpowiedzi[5]} \n"
+            f"\r\r 7. {odpowiedzi[6]}  \n")
+print(f"odpowiedz: {odpowiedzi[int(odp1)-1]}")
 
+odpowiedzi = ["podczas podróży",
+              "w czasie wolnym (po pracy, na urlopie)",
+              "podczas pracy/nauki (to ich element)",
+              "w ogóle nie czytam",
+              "inne, jakie: "]
 odp2 = input("pytanie 3: W jakich okolicznościach czytasz książki najczęściej? \n"
-            "\r\r 1. podczas podróży \n"
-            "\r\r 2. w czasie wolnym (po pracy, na urlopie) \n"
-            "\r\r 3. podczas pracy/nauki (to ich element) \n"
-            "\r\r 4. w ogóle nie czytam \n"
-            "\r\r 5. w ogóle nie czytam \n"
-            "\r\r 6. uprawianie sportu \n"
-            "\r\r 7. inne, jakie: \n")
-print(f"odpowiedz: {odp2}")
+            f"\r\r 1. {odpowiedzi[0]} \n"
+            f"\r\r 2. {odpowiedzi[1]} \n"
+            f"\r\r 3. {odpowiedzi[2]} \n"
+            f"\r\r 4. {odpowiedzi[3]} \n"
+            f"\r\r 5. {odpowiedzi[4]} \n")
+print(f"odpowiedz: {odpowiedzi[int(odp2)-1]}")
 
+odpowiedzi = ["chęć poszerzenia wiedzy",
+              "czytanie mnie relaksuje/odpręża",
+              "fakt, że czytanie jest modne",
+              "czytanie to moje hobby",
+              "konieczność nauki w związku z wykonywaną pracą/studiami",
+              "odczuwam presję rodziny/środowiska, żeby czytać",
+              "inny, jaki: "]
 odp3 = input("pytanie 4: Jeżeli spędzasz czas wolny czytając książki, jaki jest główny powód takiego wyboru? \n"
-            "\r\r 1. chęć poszerzenia wiedzy \n"
-            "\r\r 2. czytanie mnie relaksuje/odpręża \n"
-            "\r\r 3. fakt, że czytanie jest modne \n"
-            "\r\r 4. czytanie to moje hobby \n"
-            "\r\r 5. konieczność nauki w związku z wykonywaną pracą/studiami \n"
-            "\r\r 6. odczuwam presję rodziny/środowiska, żeby czytać \n"
-            "\r\r 7. inny, jaki: \n")
-print(f"odpowiedz: {odp3}")
+            f"\r\r 1. {odpowiedzi[0]} \n"
+            f"\r\r 2. {odpowiedzi[1]} \n"
+            f"\r\r 3. {odpowiedzi[2]} \n"
+            f"\r\r 4. {odpowiedzi[3]} \n"
+            f"\r\r 5. {odpowiedzi[4]} \n"
+            f"\r\r 6. {odpowiedzi[5]} \n"
+            f"\r\r 7. {odpowiedzi[6]}  \n")
+print(f"odpowiedz: {odpowiedzi[int(odp3)-1]}")
 
+odpowiedzi = ["papierowej (tradycyjnej)",
+              "e-booki (książki elektroniczne) na komputerze",
+              "e-booki na tablecie/telefonie",
+              "e-booki na specjalnym czytniku (np. Kindle)"]
 odp4 = input("pytanie 5: Po książki w jakiej formie sięgasz najczęściej? \n"
-            "\r\r 1. papierowej (tradycyjnej) \n"
-            "\r\r 2. e-booki (książki elektroniczne) na komputerze \n"
-            "\r\r 3. e-booki na tablecie/telefonie \n"
-            "\r\r 4. e-booki na specjalnym czytniku (np. Kindle) \n")
-print(f"odpowiedz: {odp4}")
+            f"\r\r 1. {odpowiedzi[0]} \n"
+            f"\r\r 2. {odpowiedzi[1]} \n"
+            f"\r\r 3. {odpowiedzi[2]} \n"
+            f"\r\r 4. {odpowiedzi[3]} \n")
+print(f"odpowiedz: {odpowiedzi[int(odp4)-1]}")
 
+odpowiedzi = ["0",
+              "żadnej w całości - jedynie fragmenty",
+              "1",
+              "2 lub 3",
+              "4-10",
+              "powyżej 10"]
 odp5 = input("pytanie 6: Ile książek czytasz średnio w ciągu roku? \n"
-            "\r\r 1. 0 \n"
-            "\r\r 2. żadnej w całości - jedynie fragmenty \n"
-            "\r\r 3. 1 \n"
-            "\r\r 4. 2 lub 3 \n"
-            "\r\r 5. 4-10 \n"
-            "\r\r 6. powyżej 10 \n")
-print(f"odpowiedz: {odp5}")
+            f"\r\r 1. {odpowiedzi[0]} \n"
+            f"\r\r 2. {odpowiedzi[1]} \n"
+            f"\r\r 3. {odpowiedzi[2]} \n"
+            f"\r\r 4. {odpowiedzi[3]} \n"
+            f"\r\r 5. {odpowiedzi[4]} \n"
+            f"\r\r 6. {odpowiedzi[5]} \n")
+print(f"odpowiedz: {odpowiedzi[int(odp5)-1]}")
 
+odpowiedzi = ["codziennie",
+              "raz w tygodniu",
+              "raz w miesiącu",
+              "raz na kilka miesięcy",
+              "raz na pół roku",
+              "raz na rok",
+              "wcale"]
 odp6 = input("pytanie 7: Jak często średnio czytasz książki? \n"
-            "\r\r 1. codziennie \n"
-            "\r\r 2. raz w tygodniu \n"
-            "\r\r 3. raz w miesiącu \n"
-            "\r\r 4. raz na kilka miesięcy \n"
-            "\r\r 5. raz na pół roku \n"
-            "\r\r 6. raz na rok \n"
-            "\r\r 7. wcale \n")
-print(f"odpowiedz: {odp6}")
+            f"\r\r 1. {odpowiedzi[0]} \n"
+            f"\r\r 2. {odpowiedzi[1]} \n"
+            f"\r\r 3. {odpowiedzi[2]} \n"
+            f"\r\r 4. {odpowiedzi[3]} \n"
+            f"\r\r 5. {odpowiedzi[4]} \n"
+            f"\r\r 6. {odpowiedzi[5]} \n"
+            f"\r\r 7. {odpowiedzi[6]}  \n")
+print(f"odpowiedz: {odpowiedzi[int(odp6)-1]}")
 
+odpowiedzi = ["kryminały/thrillery",
+              "horrory",
+              "fantastykę",
+              "science fiction",
+              "przygodowe",
+              "romanse",
+              "naukowe",
+              "biograficzne",
+              "podróżnicze",
+              "poezję",
+              "psychologiczne",
+              "dla dzieci i młodzieży",
+              "historyczne",
+              "hobbystyczne (gotowanie, wędkarstwo itp.)",
+              "inny, jaki: "]
 odp7 = input("pytanie 8: Po jaki gatunek książek sięgasz najczęściej? \n"
-            "\r\r 1. kryminały/thrillery \n"
-            "\r\r 2. horrory \n"
-            "\r\r 3. fantastykę \n"
-            "\r\r 4. science fiction \n"
-            "\r\r 5. przygodowe \n"
-            "\r\r 6. romanse \n"
-            "\r\r 7. naukowe \n"
-            "\r\r 8. biograficzne \n"
-            "\r\r 9. podróżnicze \n"
-            "\r\r 10. poezję \n"
-            "\r\r 11. psychologiczne \n"
-            "\r\r 12. dla dzieci i młodzieży \n"
-            "\r\r 13. historyczne \n"
-            "\r\r 14. hobbystyczne (gotowanie, wędkarstwo itp.) \n"
-            "\r\r 15. inny, jaki? \n")
-print(f"odpowiedz: {odp7}")
+            f"\r\r 1. {odpowiedzi[0]} \n"
+            f"\r\r 2. {odpowiedzi[1]} \n"
+            f"\r\r 3. {odpowiedzi[2]} \n"
+            f"\r\r 4. {odpowiedzi[3]} \n"
+            f"\r\r 5. {odpowiedzi[4]} \n"
+            f"\r\r 6. {odpowiedzi[5]} \n"
+            f"\r\r 7. {odpowiedzi[6]}  \n"
+            f"\r\r 8. {odpowiedzi[7]} \n"
+            f"\r\r 8. {odpowiedzi[8]} \n"
+            f"\r\r 10. {odpowiedzi[9]} \n"
+            f"\r\r 11. {odpowiedzi[10]} \n"
+            f"\r\r 12. {odpowiedzi[11]} \n"
+            f"\r\r 13. {odpowiedzi[12]} \n"
+            f"\r\r 14. {odpowiedzi[13]}  \n"
+            f"\r\r 15. {odpowiedzi[14]}  \n")
+print(f"odpowiedz: {odpowiedzi[int(odp7)-1]}")
